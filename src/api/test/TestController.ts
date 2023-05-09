@@ -1,7 +1,8 @@
 import { RequestHandler } from "express";
 
 export const getTestUserId: RequestHandler = (req, res, next) => {
-
+  console.log('getTestUserId');
+  res.send('12312')
 }
 
 // // a middleware function with no mount path. This code is executed for every request to the router
